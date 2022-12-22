@@ -146,6 +146,20 @@ public class Triangulation {
 }
 ```
 
+#### This is the professional's level
+
+We hear it's good to start with a _Minimum Viable Product_ (MVP), but 
+most of the time we start instead with a Minimum Product, and skimp on 
+the "viable" part.
+
+Here we have a minimum viable product, which actually is viable despite 
+its clearly initial nature.
+
+This is how we stay nimble in the face of near-infinite demand for software.
+Not only do we make sure even simple things are useful, that is, viable,
+but we build them to link up with other viable parts to make a truly viable
+whole.
+
 ### A Way Forward
 
 If you know TestNG, you probably recognize that the `obtainSides()` method 
