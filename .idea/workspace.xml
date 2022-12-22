@@ -4,18 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d546dcad-73b3-493e-bde6-e088491b3d3d" name="Changes" comment="Practice exercise around triangles.">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lewscanon/triangles/NaiveTriangles.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lewscanon/triangles/Triangle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lewscanon/triangles/Triangulation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lewscanon/triangles/Trisided.java" afterDir="false" />
+    <list default="true" id="d546dcad-73b3-493e-bde6-e088491b3d3d" name="Changes" comment="Update .gitignore.">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +44,6 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -113,8 +103,23 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1671658468963</updated>
-      <workItem from="1671658471322" duration="11949000" />
+      <workItem from="1671658471322" duration="12769000" />
     </task>
+    <task id="LOCAL-00001" summary="Practice exercise around triangles.">
+      <created>1671670572950</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1671670572950</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Update .gitignore.">
+      <created>1671670614238</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1671670614238</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -122,6 +127,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Practice exercise around triangles." />
-    <option name="LAST_COMMIT_MESSAGE" value="Practice exercise around triangles." />
+    <MESSAGE value="Update .gitignore." />
+    <option name="LAST_COMMIT_MESSAGE" value="Update .gitignore." />
   </component>
 </project>
