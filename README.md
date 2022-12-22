@@ -104,7 +104,7 @@ package com.lewscanon.triangles;
 public class Triangulation {
 
     /**
-     * Drive a test use of the {@code Triangle} type.
+     * Drive a test use of the {@code Trisided} type.
      * @param args command arguments.
      */
     public static void main(String[] args) {

@@ -2,7 +2,7 @@ package com.lewscanon.triangles;
 
 /**
  * Exercise the logic around triangles.
- * For each test case determine the {@code Triangle} type
+ * For each test case determine the {@code Trisided} type
  * while handling erroneous triangle specifications (illegal sides).
  */
 public class Triangulation {
