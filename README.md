@@ -7,7 +7,7 @@ They asked me to code up a simple problem -
 Given the lengths of the three sides of a triangle, identify whether it is
 `equilateral`, `isosceles`, or `scalene`.
 
-### THe Simple Approach
+### The Simple Approach
 
 First we just get the core logic down, more or less.
 
