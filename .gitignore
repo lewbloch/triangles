@@ -35,3 +35,17 @@ build/
 .DS_Store
 /.idea/inspectionProfiles/Project_Default.xml
 /.idea/
+
+# binary files
+*.class
+*.ear
+*.jar
+*.war
+
+*.tar
+*.tgz
+*.zip
+
+*.a
+*.o
+*.obj

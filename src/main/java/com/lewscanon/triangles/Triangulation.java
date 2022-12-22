@@ -1,12 +1,20 @@
 package com.lewscanon.triangles;
 
-/** Logic around triangles. */
+/**
+ * Exercise the logic around triangles.
+ * For each test case determine the {@code Triangle} type
+ * while handling erroneous triangle specifications (illegal sides).
+ */
 public class Triangulation {
 
+    /**
+     * Drive a test use of the {@code Triangle} type.
+     * @param args command arguments.
+     */
     public static void main(String[] args) {
-        for (double[] sides : obtainSides()) {
+        for (double[] sides : obtainSides()) {  // run through the sides data
             try {
-                final Triangle triangle = new Triangle(sides);
+                final Trisided triangle = new Triangle(sides);
                 System.out.println(
                         "The triangle " + triangle + " is " + triangle.getTriangleType());
             }
@@ -17,6 +25,10 @@ public class Triangulation {
         }
     }
 
+    /**
+     * Deliver rows of test data.
+     * @return rows of test data.
+     */
     public static double[][] obtainSides() {
         @SuppressWarnings("UnnecessaryLocalVariable")
         final double[][] testData = {
