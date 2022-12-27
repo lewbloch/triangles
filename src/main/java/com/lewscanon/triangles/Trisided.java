@@ -1,5 +1,6 @@
 package com.lewscanon.triangles;
 
+import java.util.Arrays;
 import java.util.Objects;
 
 /** The characteristics and behavior of a triangle. */
@@ -7,13 +8,23 @@ public interface Trisided {
     /** The number of sides. */
     int NUM_SIDES = 3;
 
+    /** Error message: null sides value. */
+    String NULL_SIDES = "Forbidden null value for sides";
+    /** Error message: wrong number of sides. */
+    String WRONG_NUMBER_OF_SIDES
+            = "Forbidden number of sides, must equal " + NUM_SIDES
+                + " found %d: %s";
+    /** Error message: invalid side length values. */
+    String WRONG_SIDE_LENGTHS
+            = "Forbidden lengths for sides, too long or short: %s";
+
     /**
-     * Validate a triangle's sides' values.
-     * @param sidesTest the sides to validate.
+     * Validate a trisided figure's sides' values.
+     * @param sides the sides to validate.
      * @return whether the specified sides are valid.
      */
-    static boolean areValid(final double [] sidesTest) {
-        final double [] sides = Objects.requireNonNull(sidesTest);
+    default boolean areValid(final double[] sides) {
+        Objects.requireNonNull(sides);
         boolean isValid = (sides.length == NUM_SIDES);  // confirm the number of sides
         /* for each side (indexed modulo NUM_SIDES) check that its length is:
          *  - positive
@@ -24,8 +35,7 @@ public interface Trisided {
             final double sideA = sides[ix];
             final double sideX = sides[(ix + 1) % NUM_SIDES];
             final double sideY = sides[(ix + 2) % NUM_SIDES];
-            isValid = (sideA > 0.0)
-                    && (sideA < (sideX + sideY));
+            isValid = sideA < (sideX + sideY);
         }
         return isValid;
     }
@@ -34,15 +44,33 @@ public interface Trisided {
      * Get the sides' lengths.
      * @return an array of the sides' lengths.
      */
-    double [] getSides();
+    double[] getSides();
 
     /**
      * Get the number of sides.
      * @return the number of sides.
      */
     @SuppressWarnings("unused")
-    default int getNumSides() {
+    default int getNumberOfSides() {
         return getSides().length;
+    }
+
+    /**
+     * Throw exceptions for any rules the sides violate.
+     * @param sides The sides to invalidate if possible.
+     */
+    default void invalidate(final double[] sides) {
+        if (sides == null) {
+            throw new NullPointerException(NULL_SIDES);
+        }
+        if (sides.length != NUM_SIDES) {
+            throw new IllegalArgumentException(String.format(WRONG_NUMBER_OF_SIDES,
+                    sides.length, Arrays.toString(sides)));
+        }
+        if (! areValid(sides)) {
+            throw new IllegalArgumentException(String.format(WRONG_SIDE_LENGTHS,
+                    Arrays.toString(sides)));
+        }
     }
 
     /**
@@ -50,7 +78,7 @@ public interface Trisided {
      * @return the triangle type.
      */
     default TriangleType getTriangleType() {
-        double [] sides = getSides();
+        double[] sides = getSides();
         assert areValid(sides);
 
         if (sides[0] == sides[1] || sides[0] == sides[2]) {
