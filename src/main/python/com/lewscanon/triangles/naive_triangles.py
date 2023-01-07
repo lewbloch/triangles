@@ -33,7 +33,7 @@ def obtain_sides():
     return test_data
 
 
-for sides in obtain_sides():
-    triangle_type = evaluate_triangle_type(sides[0], sides[1], sides[2])
-    message = f"The triangle with sides {sides} is {str(triangle_type)}"
-    print(message)
+if __name__ == '__main__':
+    for sides in obtain_sides():
+        triangle_type = evaluate_triangle_type(sides[0], sides[1], sides[2])
+        print(f"The triangle with sides {sides} is {triangle_type}")
